@@ -5,6 +5,7 @@ import RegExp
 import qualified Data.Map as Map
 import qualified Data.Set as Set
 
+-- A deterministic finite automaton.
 dfa :: DFA
 dfa = DFA
     { states = Set.fromList [1, 2]
@@ -23,6 +24,7 @@ _0 = Symbol '0'
 _1 :: RegExp
 _1 = Symbol '1'
 
+-- Equivalente regular expresion for the automataton 'dfa'.
 re :: RegExp
 re = Plus Epsilon (Plus _0 _1)
 
