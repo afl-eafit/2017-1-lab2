@@ -12,3 +12,4 @@ data RegExp = Empty
             | Star RegExp
             | Plus RegExp RegExp
             | Dot  RegExp RegExp
+            deriving Show
