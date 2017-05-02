@@ -23,6 +23,6 @@ _0 = Symbol '0'
 _1 :: RegExp
 _1 = Symbol '1'
 
-reg :: RegExp 
-reg = Plus Epsilon (Plus _0 _1)
+re :: RegExp
+re = Plus Epsilon (Plus _0 _1)
 
