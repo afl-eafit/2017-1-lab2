@@ -16,28 +16,40 @@
     <h3>Introduction</h3>
 
     <p>Kleene’s algorithm transforms a given deterministic finite
-    automaton (DFA) into a regular expression. Together with
-    Thompson’s construction, it establishes the equivalence of several
-    description formats for regular languages [Gross and Yellen,
-    2004].</p>
+    automaton into a regular expression. Together with Thompson’s
+    construction, it establishes the equivalence of several
+    description formats for regular languages [Gross and Yellen 2004,
+    §2.1, Remark R13].</p>
 
     <h3>Assignment (80%)</h3>
 
     <ul>
       <li>Download the<a href="https://github.com/"> GitHub </a>
       repository <a href=
-      "https://github.com/afl-eafit/2017-1-lab2">2017-1-lab2</a>.
-      </li>
+      "https://github.com/afl-eafit/2017-1-lab2">2017-1-lab2</a>.</li>
 
-      <li>
-        Using the data types in the above repository defines a
-        function
-        <pre>
-          kleene :: DFA -&gt; RegExp
-        </pre>
-        that takes a deterministic finite automaton intro a regular
-        expression by implementing Kleen's algorithm [Hopcroft and
-        Ullman, 1979].
+      <li>(70%) Using the data types in the above repository defines a
+      function
+      <pre>
+        kleene :: DFA -&gt; RegExp
+      </pre>
+      that takes a deterministic finite automaton intro a regular
+      expression by implementing Kleen's algorithm [Hopcroft and
+      Ullman 1979, Theorem 2.4].</li>
+
+      <li>(10%)
+      <ul>
+        <li>Your lab will be tested using the <code>-Wall</code>,
+        <code>-Wmissing-local-signatures</code> and
+        <code>-Wmissing-signatures</code> options.</li>
+
+        <li>Annotate (in English) your source code using <a
+        href="http://hackage.haskell.org/package/haddock">Haddock</a>. Documentation
+        should explain your solution for the assignment.</li>
+
+        <li>Improve your implementation with <a
+        href="https://github.com/ndmitchell/hlint">HLint</a>.</li>
+      </ul>
       </li>
     </ul>
 
@@ -66,8 +78,6 @@
       <li>Has type signatures for everything (included
       <code>where</code>-clauses and
       <code>let</code>-definitions).</li>
-
-      <li>Has good comments.</li>
 
       <li>Has no junk (unused code, commented code, unnecessary
       code).</li>
@@ -101,19 +111,19 @@
       for the assignment.</li>
 
       <li>
-        <tt>README</tt> (or <tt>README.md</tt>), a file containing at
-        least the following information.
+        <tt>README</tt> (or <tt>README.md</tt>), a file (in English)
+        containing at least the following information:
 
         <ul>
-          <li>The name of your program.</li>
+          <li>The name of your program</li>
 
-          <li>Your name(s).</li>
+          <li>Your name(s)</li>
 
-          <li>A general description of your program.</li>
+          <li>A general description of your program</li>
 
-          <li>Information on how to use your program.</li>
+          <li>Information on how to use your program</li>
 
-          <li>GHC and Haskell platform versions used</li>
+          <li>GHC and/or Haskell platform versions used</li>
         </ul>
       </li>
 
@@ -122,17 +132,13 @@
 
     <h3>Bibliography</h3>
     <ul>
-      <li>
-        Jonathan L. Gross and Jay Yellen, ed. (2004). Handbook of
-        Graph Theory. Discrete Mathematics and it Applications. CRC
-        Press. ISBN 1-58488-090-2. Here: sect.2.1, remark R13 on p.65
-      </li>
+      <li>Jonathan L. Gross and Jay Yellen, ed. (2004). Handbook of
+      Graph Theory. Discrete Mathematics and it Applications. CRC
+      Press. </li>
 
-      <li>
-        John E. Hopcroft, Jeffrey D. Ullman (1979). Introduction to
-        Automata Theory, Languages, and Computation. Addison-Wesley. ISBN
-        0-201-02988-X. Here: Theorem 2.4, p.33-34
-      </li>
+      <li>John E. Hopcroft, Rajeev Motwani and Jeffrey D. Ullman
+      (2007). Introduction to automata theory, languages, and
+      computation, 3rd edition. Pearson Education, Inc.</li>
     </ul>
 
     <hr/>
